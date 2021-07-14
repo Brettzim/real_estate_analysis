@@ -47,7 +47,7 @@ If you are struggling to define a stakeholder, we recommend you complete a proje
 
 ## Analysis
 
-The first steps to analyzing the data is to clean the 
+The first steps of the analysis is to analyze and interprit the data and to clean the missing values in the dataset. 
 
 ## Deliverables
 
