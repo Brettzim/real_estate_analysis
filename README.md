@@ -1,13 +1,18 @@
-# Phase 2 Project
+# King County Housing Data Analysis
+![King_county_logo](./picture/King_County.jpeg)
 
-
+## Table of Contents
+* [Project_Overview](#project-overview)
+* [The_Data](#the-data)
+* [Analysis](#analysis)
 ## Project Overview
 
-This repository uses a linear regression model on the King County Home sales to create a model capable of prediting home prices based on existing sales.
+This repository analyzes the data on the King County Home sales to create a linear regression model capable of prediting home prices based on the existing home sales data. Our objective is to create a model that has a low Root Mean Squared Error (RMSE) which means that our prediction does not stray far the model.
 
 ### The Data
 
 This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The descriptions for the King County Data Set is shown below.
+
 * id: unique identification for the house
 * date: the date the house was sold
 * price: Price of the home
@@ -17,7 +22,7 @@ This project uses the King County House Sales dataset, which can be found in  `k
 * sqft_lot: sqft of the lot
 * floors: number of floors
 * waterfront: house with a view to waterfront
-*  view: has been viewed
+* view: has been viewed
 * condition: condition of the home overall
 * grade: overall grade given based on King County system
 * sqft_above: sqft of house apart from basement
@@ -27,8 +32,10 @@ This project uses the King County House Sales dataset, which can be found in  `k
 * zipcode: zipcode
 * lat: latitude coordinates
 * long: longitude coordinate
-* sqft_living: sqft of living space for the 15 neighbors
+* sqft_living: sqft of living space for the nearest 15 neighbors
 * sqft_lot15: sqft of land of the nearest 15 neighbors
+
+Based on the information of the dataset, some data such as date and id are not particularly useful to predicting the price of a home and were not considered.
 
 ### Business Problem
 
@@ -37,6 +44,10 @@ Realestate Investors have come to #company name# and requested a model to preduc
 
 
 If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+
+## Analysis
+
+The first steps to analyzing the data is to clean the 
 
 ## Deliverables
 
