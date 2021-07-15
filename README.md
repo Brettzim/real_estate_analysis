@@ -45,7 +45,7 @@ This project uses the King County House Sales dataset, which can be found in  `k
 * sqft_living: sqft of living space for the nearest 15 neighbors
 * sqft_lot15: sqft of land of the nearest 15 neighbors
 
-## Data Cleaning:
+## Data Cleaning
 
 ![Initial_data](./picture/initial_data.png)
 
@@ -60,7 +60,9 @@ We first cerated our baseline model using a Dummy Regressor.
 The first simple model was creatied by selecting all features with a correlation score > 0.5. This model performed poorly with only a R squared value of 0.510 which describes how well the the model fits the data. Different factors and were tested and many models were analyzied and we finalized on a model with an R squared value of 0.75. How the model fit isn't the end of the analysis. A model not only has to take the fit into consideration but the possible variations as well. Our final model ended up with a root mean square error (RMSE) of approximately $110,000. This means that our predicted data at any point can be off by $110,000 which is pretty substantial given that the average home price in King County was $540,296. This data can be refined further with more analysis and more data. Thorough cleaning can remove more outliers to provide a better fit for the models.
 
 
+## Conclusion
 
+When looking into a house a lot of factors need to be considerd. Looking into the data, we find that many of the values are colinear meaning that that these factors drive the price up but also relate to one another. Some examples of these factors are sqft_living to sqft_above and grade to sqft_above. Taking these into considerations, we decided to pick two factors from our data that impacted the price the most and that is the most applicable for someone trying to flip a house. These factors were condition and grade. 
 
 
 
