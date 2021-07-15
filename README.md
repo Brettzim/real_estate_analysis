@@ -7,11 +7,18 @@
 * [Analysis](#analysis)
 ## Project Overview
 
-This repository analyzes the data on the King County Home sales to create a linear regression model capable of prediting home prices based on the existing home sales data. Our objective is to create a model that has a low Root Mean Squared Error (RMSE) which means that our prediction does not stray far the model.
+This repository analyzes the data on the King County Home sales to create a linear regression model capable of predicting home prices based on the existing home sales data. Our objective is to create a model using a house sales database based in King Country, Washington. The goal of our model is to have a low Root Mean Squared Error (RMSE) so we know that our prediction does not stray far the model. By using regression techniques, we were able to identify how the sales price of houses can change when doing different renovations, making our model a useful tool for someone going into the house flipping business.
+
+### Business Problem
+
+Our real estate holding group startup Detova Veda is making a pitch to help smaller investors compete against established real estate investment firms. In order to show that we can help clients in their venture, we must show that our product can accurately predict how well an upgrade in any aspect of a home will impact its sale price. This predictive model will use these small investors to infiltrate the real estate investment market. To provide an answer, we looked into the question: what is the most impactful way you can increase the value of a home?
+
+This is an important question, because real estate is a high stakes industry. Investors will want a direction to go where they can be confident they will get a return on their investment. Therefore, we must provide a concrete answer for them.
+
 
 ### The Data
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The descriptions for the King County Data Set is shown below.
+This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The dataset included houses in King County built between 1900 and 2015. The descriptions of the dataset's columns is shown below.
 
 * id: unique identification for the house
 * date: the date the house was sold
@@ -35,19 +42,18 @@ This project uses the King County House Sales dataset, which can be found in  `k
 * sqft_living: sqft of living space for the nearest 15 neighbors
 * sqft_lot15: sqft of land of the nearest 15 neighbors
 
-Based on the information of the dataset, some data such as date and id are not particularly useful to predicting the price of a home and were not considered.
+Data Cleansing:
 
-### Business Problem
+After opening the csv as a Pandas dataframe, the first thing we checked for was making sure the data types lined up with the actual data it contained. The sqft_basement column was a column of measurements but the values were stored as objects. Therefore, we had to convert them to floats. At the same time, we converted the year built column from floats to ints, and smoothed out an obvious outlier of a 33 bedroom house. We also filled the null values of homes with no view, basement, or waterfront location to values of 0. We also dropped the ID and date columns.
 
-Realestate Investors have come to #company name# and requested a model to preduct home prices. 
-
-
-
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
 
 ## Analysis
 
-The first steps of the analysis is to analyze and interprit the data and to clean the missing values in the dataset. 
+We first cerated our baseline model using a Dummy Regressor. 
+
+We were then able to create our simple model by selecting all features with a correlation score > .5
+
+ 
 
 ## Deliverables
 
