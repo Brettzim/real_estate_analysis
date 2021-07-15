@@ -5,6 +5,8 @@
 * [Project_Overview](#project-overview)
 * [The_Data](#the-data)
 * [Analysis](#analysis)
+* [Data Cleaning](#data-cleaning)
+
 ## Project Overview
 
 This repository analyzes the data on the King County Home sales to create a linear regression model capable of predicting home prices based on the existing home sales data. Our objective is to create a model using a house sales database based in King Country, Washington. The goal of our model is to have a low Root Mean Squared Error (RMSE) so we know that our prediction does not stray far the model. By using regression techniques, we were able to identify how the sales price of houses can change when doing different renovations, making our model a useful tool for someone going into the house flipping business.
@@ -42,18 +44,22 @@ This project uses the King County House Sales dataset, which can be found in  `k
 * sqft_living: sqft of living space for the nearest 15 neighbors
 * sqft_lot15: sqft of land of the nearest 15 neighbors
 
-Data Cleansing:
+## Data Cleaning:
 
-After opening the csv as a Pandas dataframe, the first thing we checked for was making sure the data types lined up with the actual data it contained. The sqft_basement column was a column of measurements but the values were stored as objects. Therefore, we had to convert them to floats. At the same time, we converted the year built column from floats to ints, and smoothed out an obvious outlier of a 33 bedroom house. We also filled the null values of homes with no view, basement, or waterfront location to values of 0. We also dropped the ID and date columns.
+[Initial_data](./picture/initial_data.png)
+
+The first thing to check for in any data set is making sure the data types lined up with the actual data it contained. The sqft_basement column was a column of measurements but the values were stored as objects. Therefore, we had to convert them to floats. At the same time, we converted the year built column from floats to ints, and smoothed out an obvious outlier of a 33 bedroom house. We also filled the null values of homes with no view, basement, or waterfront location to values of 0. We also dropped the ID and date columns which were not necessary for our analysis.
 
 
 ## Analysis
 
 We first cerated our baseline model using a Dummy Regressor. 
 
+[correlation](./picture/correlation_init.png)
+
 We were then able to create our simple model by selecting all features with a correlation score > .5
 
- 
+
 
 ## Deliverables
 
