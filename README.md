@@ -48,8 +48,7 @@ This project uses the King County House Sales dataset, which can be found in  `k
 
 ![Initial_data](./picture/initial_data.png)
 
-The first thing to check for in any data set is making sure the data types lined up with the actual data it contained. The sqft_basement column was a column of measurements but the values were stored as objects. Therefore, we had to convert them to floats. At the same time, we converted the year built column from floats to ints, and smoothed out an obvious outlier of a 33 bedroom house. We also filled the null values of homes with no view, basement, or waterfront location to values of 0. We also dropped the ID and date columns which were not necessary for our analysis.
-
+The first thing to check for in any data set is making sure the data types lined up with the actual data it contained. The sqft_basement column was a column of measurements but the values were stored as objects. Therefore, we had to convert them to floats. At the same time, we converted the year built column from floats to ints, and smoothed out an obvious outlier of a 33 bedroom house. We also filled the null values of homes with no view, basement, or waterfront location to values of 0. We also dropped the ID and date columns which were not necessary for our analysis. 
 
 ## Analysis
 
@@ -57,7 +56,8 @@ We first cerated our baseline model using a Dummy Regressor.
 
 ![correlation](./picture/correlation_init.png)
 
-The first simple model was creatied by selecting all features with a correlation score > 0.5. This model performed poorly with only a R squared value of 0.510 which describes how well the the model fits the data. Different factors and were tested and many models were analyzied and we finalized on a model with an R squared value of 0.75. How the model fit isn't the end of the analysis. A model not only has to take the fit into consideration but the possible variations as well. 
+The first simple model was creatied by selecting all features with a correlation score > 0.5. This model performed poorly with only a R squared value of 0.510 which describes how well the the model fits the data. Different factors and were tested and many models were analyzied and we finalized on a model with an R squared value of 0.75. How the model fit isn't the end of the analysis. A model not only has to take the fit into consideration but the possible variations as well. Our final model ended up with a root mean square error (RMSE) of approximately $110,000. This means that our predicted data at any point can be off by $110,000 which is pretty substantial given that the average home price in King County was $540,296. This data can be refined further with more analysis and more data. Thorough analysis can remove more outliers to provide a better model.
+
 
 
 
