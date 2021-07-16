@@ -91,7 +91,7 @@ From this graph we can see that there is a significant gain in the value of the 
 ├── Picture <--- Pictures obtained from online and internally generated  
 ├── Bakeoff_final.ipynb <-- Analysis for the bakeoff
 ├── Group2_bakeoff.csv <-- results of the bakeoff parameters
-├── Project 2 Main Jupyter notebook.ipyb <--- Jupyter notebook of the analysis
+├── Proj2_Notebook.ipyb <--- Jupyter notebook of the analysis
 ├── Project 2 Presentation slides.pdf <--- Presentation slides
 ├── README.md
 ```
