@@ -6,6 +6,7 @@
 * [The_Data](#the-data)
 * [Analysis](#analysis)
 * [Data Cleaning](#data-cleaning)
+* [Conclusion](#conclusion)
 * [Team](#team)
 
 ## Project Overview
@@ -64,7 +65,9 @@ The first simple model was creatied by selecting all features with a correlation
 
 When looking into a house a lot of factors need to be considerd. Looking into the data, we find that many of the values are colinear meaning that that these factors drive the price up but also relate to one another. Some examples of these factors are sqft_living to sqft_above and grade to sqft_above. Taking these into considerations, we decided to pick two factors from our data that impacted the price the most and that is the most applicable for someone trying to flip a house. These factors were condition and grade. 
 
+![grade_graph](./picture/Grade_graph.png)
 
+From this graph we can see that there is a significant gain in the value of the home as we increase the grade.
 
 ## Team
 - Tony Bai <br>
@@ -76,7 +79,9 @@ When looking into a house a lot of factors need to be considerd. Looking into th
 - Brett Zimmerman <br>
     Github: Brettzim <br>
 
+## Appendix
 
+[king_county_info](https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r#g)
 
 ## Deliverables
 
