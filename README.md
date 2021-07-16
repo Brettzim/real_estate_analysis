@@ -8,6 +8,7 @@
 * [Data Cleaning](#data-cleaning)
 * [Conclusion](#conclusion)
 * [Team](#team)
+* [Appendix](#appendix)
 
 ## Project Overview
 
