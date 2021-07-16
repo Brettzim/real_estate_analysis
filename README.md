@@ -9,6 +9,7 @@
 * [Conclusion](#conclusion)
 * [Team](#team)
 * [Appendix](#appendix)
+* [Project_Structure](#project-structure)
 
 ## Project Overview
 
@@ -84,3 +85,13 @@ From this graph we can see that there is a significant gain in the value of the 
 
 [king_county_info](https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r#g)
 
+## Project Structure 
+```
+├── Data <--- CSV files for both the main project and the bakeoff
+├── Picture <--- Pictures obtained from online and internally generated  
+├── Bakeoff_final.ipynb <-- Analysis for the bakeoff
+├── Group2_bakeoff.csv <-- results of the bakeoff parameters
+├── Project 2 Main Jupyter notebook.ipyb <--- Jupyter notebook of the analysis
+├── Project 2 Presentation slides.pdf <--- Presentation slides
+├── README.md
+```
